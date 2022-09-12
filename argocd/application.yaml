@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
-  kind: Application
-  metadata:
-    name: bgd
-    namespace: openshift-gitops
-  spec:
-    destination:
-      namespace: bgd
-      server: https://kubernetes.default.svc
-    project: default
-    source:
-      path: argocd/bgd
-      repoURL: https://github.com/rawagner/cluster-setup
-      targetRevision: HEAD
-    syncPolicy:
-      automated: {}
+kind: Application
+metadata:
+  name: bgd
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: bgd
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: argocd/bgd
+    repoURL: https://github.com/rawagner/cluster-setup
+    targetRevision: HEAD
+  syncPolicy:
+    automated: {}
