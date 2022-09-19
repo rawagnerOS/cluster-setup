@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: argocd/bgd
-    repoURL: https://github.com/rawagner/cluster-setup
+    repoURL: https://github.com/rawagneros/cluster-setup
     targetRevision: HEAD
   syncPolicy:
     automated: {}
